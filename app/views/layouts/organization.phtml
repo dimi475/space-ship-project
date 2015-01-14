@@ -1,0 +1,21 @@
+<main class="row">
+
+	<aside class="col-md-4 col-lg-3">
+			<ul class="nav nav-pills nav-stacked">
+				<li><a href="<?= $this->url->get(['for' => 'bridgeView']) ?>">Bridge view</a></li>
+				<li><a href="<?= $this->url->get(['for' => 'controlCentreView']) ?>">Control centre view</a></li>
+				<li><a href="<?= $this->url->get(['for' => 'wardroomView']) ?>">Wardroom view</a></li>
+				<li><a href="<?= $this->url->get(['for' => 'observationRoomView']) ?>">Observation room view</a></li>							
+				<li><a href="<?= $this->url->get(['for' => 'crewCabinView']) ?>">Crew cabin view</a></li>							
+				<li><a href="<?= $this->url->get(['for' => 'auxiliaryCompartmentView']) ?>">Auxiliary compartment view</a></li>							
+				<li><a href="<?= $this->url->get(['for' => 'engineControlRoomView']) ?>">Engine control room view</a></li>							
+			</ul>
+	</aside>
+	
+	<section class="col-md-8 col-lg-9">
+		
+		<?= $this->getContent() ?>
+		
+	</section>
+	
+</main>	

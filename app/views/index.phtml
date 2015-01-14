@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Spaceship project</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<script src="<?= $this->url->getBaseUri() ?>js/jquery.min/jquery.min.js"></script>
+		<script src="<?= $this->url->getBaseUri() ?>bootstrap/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="<?= $this->url->getBaseUri() ?>css/styles.css">
+		<script type="text/javascript" src="<?= $this->url->getBaseUri() ?>js/scripts.js"></script>
+	</head>
+	
+	<body>
+	
+		<div class="container">
+		
+			<header>
+				<h1><a href="<?= $this->url->get(['for' => 'home']) ?>">Space ship project</a></h1>
+				<nav class="navbar navbar-inverse">
+					<ul class="nav navbar-nav">
+						<li><a href="<?= $this->url->get(['for' => 'mission']) ?>">Mission</a></li>
+						<li><a href="<?= $this->url->get(['for' => 'organization']) ?>">Organisation</a></li>
+						<li><a href="<?= $this->url->get(['for' => 'construction']) ?>">Construction</a></li>
+						<li><a href="<?= $this->url->get(['for' => 'commandingSpaceship']) ?>">Commanding space ship...</a></li>
+						<li><a href="<?= $this->url->get(['for' => 'about']) ?>">About</a></li>
+					</ul>
+				</nav>
+			</header>
+			
+			<?= $this->getContent() ?>
+			
+			<footer class="text-center">
+				*******&copy; All rights reserved********
+			</footer>
+			
+		</div>
+		
+	</body>
+	
+</html>
