@@ -1,1 +1,4 @@
 html, body { background-color: black; color: grey; }
+
+.paragraph { margin: 20px 0;}
+.text-colored-1 { color: #c60; }
